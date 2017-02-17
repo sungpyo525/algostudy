@@ -1,0 +1,54 @@
+package algStudy;
+
+import java.util.Scanner;
+import java.util.Stack;
+public class alg2504 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Stack stack=new Stack();
+		
+		int mul=1;
+		int ans=0;
+		
+		String s=sc.next(); 
+		int len=s.length();
+		char str[]=s.toCharArray(); //string을 char배열로 변환
+		
+		
+		for(int i=0; i<len; i++){
+		 if(str[i]=='('){
+			 mul*=2;
+			 stack.push(str[i]); //시작을 연 것이 있으면 push
+			 if(str[i+1]==')'){
+				 ans+=mul;
+			 }
+		 }
+		 else if(str[i]=='['){
+			 mul*=3;
+			 stack.push(str[i]); //시작을 연 것이 있으면 push
+			 if(str[i+1]==']'){
+				 ans+=mul;
+			 }
+		 }
+		
+		 //empty 에서 1(true)은 값이 없음(비어있음)/ 0은 값이 있음(비어있지 않음)   
+		 //true 는 1, false 는 0
+		 else if (!stack.empty() && str[i] == ')'){ //stack에 값이있는데 ')'면 stack에 있는 값을 빼고, mul도 없앤다.  
+	            mul /= 2;
+		 		stack.pop();
+		 		System.out.println();
+		 }
+	     else if (!stack.empty() && str[i] == ']'){
+	            mul /= 3;
+		 		stack.pop();
+		}
+	}
+		System.out.print(stack.empty()? ans : 0); 
+		//empty는 값이없으면 1, 값이 없으면 0 
+		//answer?true:false
+		//비어있으면 ans호출, 비어있지 않으면(닫힌것이 없다.) 0 호출 
+
+	}
+
+}
