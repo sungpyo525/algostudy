@@ -8,10 +8,11 @@ int result[101];
 
 void printP()
 {
-	for (int j = 1; j <= N; j++){
-		for (int i = 1; i <= N; i++)
+	for (int j = 1; j <= N; j++)
+	{
+		for (int i = 1; i <= N; i++) 
 			cout << " " << people[j][i];
-			cout << endl;
+		cout << endl;
 	}
 	
 
