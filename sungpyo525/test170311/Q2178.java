@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+import javafx.util.Pair;
+
 // 현재의 위치 저장할 클래스 구조체
 class Point{
 	int x;

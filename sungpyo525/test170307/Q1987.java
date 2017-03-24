@@ -7,14 +7,14 @@ public class Q1987 {
 	static int coff[]= {0, 0, -1, 1};
 	
 	static int R, C, result;
-	static char map[][];
-	static boolean visited[][];
-	static boolean used[]=new boolean[26];
+	static char map[][] ;
+	static boolean visited[][] ;
+	static boolean used[]=new boolean[26] ;
 	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		R=sc.nextInt();
-		C=sc.nextInt();
+		Scanner sc = new Scanner(System.in) ;
+		R=sc.nextInt() ;
+		C=sc.nextInt() ;
 		
 		map = new char [R][C];
 		visited= new boolean[R][C];

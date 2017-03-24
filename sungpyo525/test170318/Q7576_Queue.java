@@ -24,7 +24,7 @@ public class Q7576_Queue {
 	static int tomato=0;
 	static int maxtime=1;
 	
-	static Point point = new Point(0, 0);
+	
 	static Queue<Point> q= new LinkedList<Point>();
 	
 	public static void main(String[] args) {
@@ -41,10 +41,10 @@ public class Q7576_Queue {
 				if(map[i][j]==1) q.offer(new Point(i,j));
 			}
 		}
-		System.out.println(bfs(h,w));
+		bfs(h,w);
 	}
 
-	public static int bfs(int h, int w) {
+	public static void bfs(int h, int w) {
 		while(!q.isEmpty()){
 			Point here=q.peek();
 			int hi= here.x;
@@ -65,9 +65,9 @@ public class Q7576_Queue {
 		}
 		
 		if(tomato==0){
-			return maxtime-1;
+			System.out.println(maxtime-1);
 		} else{
-			return -1;
+			System.out.println(-1);
 		}
 		
 	}
