@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg949\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fnil\fcharset129 AppleSDGothicNeo-Regular;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;
+\red63\green127\blue95;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs22 \cf2 package\cf0  Self0330;\
+\
+\cf2 import\cf0  java.util.Scanner;\
+\
+\cf2 public\cf0  \cf2 class\cf0  TESTDIREC \{\
+\
+	\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String \cf3 args\cf0 [])\{\
+		\
+		Scanner \cf3 \ul \ulc3 sc\cf0 \ulnone  = \cf2 new\cf0  Scanner(System.\cf4 in\cf0 );\
+		\
+		\cf2 int\cf0  \cf3 N\cf0  = \cf3 sc\cf0 .nextInt(); \cf5 //
+\f1 \'bd\'c3\'c7\'e8\'c0\'e5
+\f0  
+\f1 \'b0\'b3\'bc\'f6
+\f0 \cf0 \
+		\cf2 int\cf0  \cf3 Ai\cf0 [] = \cf2 new\cf0  \cf2 int\cf0 [\cf3 N\cf0 ]; \cf5 //
+\f1 \'b0\'a2
+\f0  
+\f1 \'bd\'c3\'c7\'e8\'c0\'e5
+\f0  
+\f1 \'c0\'c0\'bd\'c3\'c0\'da
+\f0  
+\f1 \'bc\'f6
+\f0 \cf0 \
+		\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0  = 0; \cf3 i\cf0 <\cf3 N\cf0 ; \cf3 i\cf0 ++)\{\
+			\
+			\cf3 Ai\cf0 [\cf3 i\cf0 ] = \cf3 sc\cf0 .nextInt();\
+			\
+		\}\
+		\
+		\cf2 int\cf0  \cf3 chong\cf0  = \cf3 sc\cf0 .nextInt(); \cf5 //
+\f1 \'c3\'d1\'b0\'a8\'b5\'b6\'b0\'fc
+\f0  
+\f1 \'b0\'a8\'bd\'c3
+\f0  
+\f1 \'c0\'c0\'bd\'c3\'c0\'da
+\f0  
+\f1 \'bc\'f6
+\f0  \cf0 \
+		\cf2 int\cf0  \cf3 bu\cf0  = \cf3 sc\cf0 .nextInt(); \cf5 //
+\f1 \'ba\'ce\'b0\'a8\'b5\'b6\'b0\'fc
+\f0  
+\f1 \'b0\'a8\'bd\'c3
+\f0  
+\f1 \'c0\'c0\'bd\'c3\'c0\'da
+\f0  
+\f1 \'bc\'f6
+\f0  \cf0 \
+		\
+		\cf5 //sc.close();  
+\f1 \'c0\'cc\'b0\'c5
+\f0  
+\f1 \'b2\'c0
+\f0  
+\f1 \'c7\'d8\'be\'df\'b4\'ef
+\f0 ? \cf0 \
+		\
+		\cf2 long\cf0  \cf3 result\cf0  = \cf3 N\cf0 ; \
+		\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0  = 0 ; \cf3 i\cf0 <\cf3 N\cf0 ; \cf3 i\cf0 ++)\{ \cf5 //
+\f1 \'c3\'d1\'b0\'a8\'b5\'b6\'b0\'fc\'c0\'cc
+\f0  
+\f1 \'b0\'a8\'bd\'c3\'c7\'d2
+\f0  
+\f1 \'bc\'f6
+\f0  
+\f1 \'c0\'d6\'b4\'c2
+\f0  
+\f1 \'c0\'ce\'bf\'f8\'bc\'f6\'b8\'a6
+\f0  
+\f1 \'bb\'ad
+\f0  \cf0 \
+			\cf3 Ai\cf0 [\cf3 i\cf0 ] = \cf3 Ai\cf0 [\cf3 i\cf0 ] - \cf3 chong\cf0 ;\
+		\}\
+		\
+		\cf2 for\cf0 (\cf2 int\cf0  \cf3 i\cf0 =0 ;\cf3 i\cf0 <\cf3 N\cf0 ; \cf3 i\cf0 ++)\{ \cf5 //
+\f1 \'bb\'a9\'b0\'ed
+\f0  
+\f1 \'b3\'b2\'c0\'ba
+\f0  
+\f1 \'c0\'c0\'bd\'c3\'c0\'da
+\f0  
+\f1 \'bc\'f6\'b8\'a6
+\f0  
+\f1 \'b0\'a1\'c1\'f6\'b0\'ed
+\f0  for
+\f1 \'b9\'ae
+\f0  
+\f1 \'b5\'b9\'b8\'b2
+\f0   \cf0 \
+			\cf2 if\cf0 (\cf3 Ai\cf0 [\cf3 i\cf0 ]>0)\{\
+				\cf2 if\cf0 (\cf3 Ai\cf0 [\cf3 i\cf0 ]%\cf3 bu\cf0  == 0)\{ \
+					\cf3 result\cf0  = \cf3 result\cf0 +(\cf3 Ai\cf0 [\cf3 i\cf0 ]/\cf3 bu\cf0 );\
+				\}\
+				\cf2 else\cf0 \{\
+					\cf3 result\cf0  = \cf3 result\cf0 +((\cf3 Ai\cf0 [\cf3 i\cf0 ]/\cf3 bu\cf0 )+1);\
+					\
+				\}\
+				\
+			\}\
+			\
+		\}\
+		\
+			System.\cf4 out\cf0 .println(\cf3 result\cf0 );\
+		\
+	\}\
+\}\
+}
