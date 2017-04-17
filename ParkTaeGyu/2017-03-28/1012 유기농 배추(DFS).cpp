@@ -55,9 +55,6 @@ int main()
 		memset(location, 0, sizeof(location));
 		memset(visited, 0, sizeof(location));
 	}
-	
-
-	
 
 	return 0;
 }
