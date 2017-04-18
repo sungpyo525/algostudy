@@ -1,7 +1,7 @@
 package com.hanwha170417;
 
 import java.util.Scanner;
-
+// 숫자 읽기
 public class ReadingNumber {
 	static char[] num={'영','일', '이', '삼', '사', '오', '육', '칠', '팔', '구'};
 	static String[] danwi={"억", "천","백","십","만","천","백","십"};
